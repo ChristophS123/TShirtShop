@@ -1,0 +1,21 @@
+<header class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo des Online-Shops" />
+    </div>
+    <h2>Einkaufswagen</h2>
+    <div class="cart">
+      <a (click)="back()"><img src="assets/back.png" alt="Back" /></a>
+    </div>
+</header>
+
+<div class="content">
+
+    <div class="container">
+        <div *ngFor="let item of shoppingCartProducts">
+            <app-shopping-cart-item [cartItem]="item" class="item"></app-shopping-cart-item>
+        </div>
+    </div>
+
+    <button class="checkout" (click)="checkOut()">Bezahlen ({{allPrice}} Euro)</button>
+
+</div>

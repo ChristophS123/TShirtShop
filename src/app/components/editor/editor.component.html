@@ -1,0 +1,36 @@
+
+<div class="content">
+    <div class="canvas">
+        <canvas
+            #canvasElement
+            (mousemove)="mouseMove($event, canvasElement)"
+            (mousedown)="mouseDown($event, canvasElement)"
+            (mouseup)="mouseUp($event, canvasElement)"
+            height="500"
+            width="500">
+        </canvas>
+    </div>
+    
+    <div class="toolbox">
+        <input type="file" (change)="onFileChange($event)">
+    
+        <button (click)="scaleDown()">-</button>
+        <button (click)="scaleUp()">+</button>
+        <button (click)="deselect()">Desel</button>
+        <button (click)="deleteImage()">Del</button>
+        <button (click)="openTextDialog()">Text</button>
+        <select #colorSelectionElement (change)="changeTShirtColor($event)">
+            <option value="WHITE">Weiß</option>
+            <option value="BLACK">Schwarz</option>
+        </select>
+        {{price}} Euro
+    </div>
+    <div class="site">
+        <p #siteElement>Vorder Seite</p>
+    </div>
+    <br/>
+    <button class="save" (click)="save()">Weiter</button>
+</div>
+
+
+

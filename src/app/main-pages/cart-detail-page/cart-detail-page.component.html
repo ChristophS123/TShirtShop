@@ -1,0 +1,45 @@
+<header class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo des Online-Shops" />
+    </div>
+    <h2>Detail Ansicht</h2>
+    <div class="cart">
+      <a (click)="backAndSave()"><img src="assets/back.png" alt="Back" /></a>
+    </div>
+</header>
+
+<div class="content">
+
+    <div class="images">
+        <img class="tshirt-image" [src]="frontImageData" height="200px" width="200px"/> 
+        <img class="tshirt-image" [src]="backImageData" height="200px" width="200px"/> <br/>
+        <img class="tshirt-image" [src]="rightImageData" height="200px" width="200px"/> 
+        <img class="tshirt-image" [src]="leftImageData" height="200px" width="200px"/> 
+    </div>
+
+    <hr />
+
+    <div class="properties">
+        <div class="amount">
+            <label>Anzahl: </label>
+            <input #amount type="number"/>
+        </div>
+        <div class="size">
+            <label>Größe: </label>
+            <select #size>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+                <option>XS</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="save-button">
+        <button (click)="backAndSave()">Speichern</button>
+    </div>
+
+</div>
+

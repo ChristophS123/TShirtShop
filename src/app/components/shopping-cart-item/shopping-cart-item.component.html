@@ -1,0 +1,8 @@
+<div class="content" style="margin-right: 32px;">
+    <div class="card" (click)="openCartItemDetailPage()">
+        <p>{{cartItem.amount}}x T-Shirt</p>
+        <p>{{cartItem.size}}</p>
+        <img [src]="cartItem.front.imageUrls[0]" height="100px" width="100px"/>
+        <p>{{cartItem.price}} Euro</p>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+
+<div class="content card">
+    
+    <div #login>
+        <div class="title">
+            <h2>Mit Account anmelden</h2>
+            <img src="assets/logo.png" height="120px" width="140px" />
+        </div>
+        <form #data="ngForm" (ngSubmit)="submitLoginData(data)">
+            <div #inputs>
+                <label>Email </label>
+                <br/>
+                <input type="text" name="email" ngModel/>
+                <br/>
+                <br/>
+                <label>Passwort </label>
+                <br/>
+                <input type="password" name="password" ngModel/>
+                <br/>
+                <button type="submit" class="">Anmelden</button>
+            </div>
+            <div #loggedIn style="visibility: hidden; display: none;">
+                Angemeldet mit
+                <p><b>{{email}}</b></p>
+                <button (click)="goToLastCheckOut()">Weiter</button>
+            </div>
+        </form>
+    
+        Noch kein Konto? <a href="https://sv-studios.de/register.php">Konto erstellen</a>
+    </div>
+    
+    <div #checkout style="visibility: hidden; display: none;">
+        <form #data="ngForm" (ngSubmit)="submitCheckoutData(data)">
+            <div>
+                <label>Straße / Hausnummer </label>
+                <br/>
+                <input type="text" name="street" ngModel/>
+                <br/>
+                <br/>
+                <label>Postleitzahl / Stadt </label>
+                <br/>
+                <input type="text" name="city" ngModel/>
+                <br/>
+                <button type="submit" class="">Bezahlen</button>
+                <div #paypal></div>
+            </div>
+        </form>
+    </div>
+
+</div>

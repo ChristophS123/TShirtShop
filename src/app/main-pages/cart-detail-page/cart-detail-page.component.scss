@@ -1,0 +1,70 @@
+.tshirt-image {
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 10px;
+    margin: 16px;
+}
+
+.images {
+    text-align: center;
+    margin-top: 32px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3c4550;
+    color: #fff;
+  }
+  
+  .logo img {
+    max-width: 120px;
+    margin-left: 64px;
+  }
+  
+  .cart img {
+    max-width: 100px; 
+    height: 30px;
+    margin-right: 50px;
+    margin-left: 80px;
+    width: 30px;
+  }
+
+  .cart img:hover {
+    cursor: pointer;
+  }
+
+  .properties {
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  label {
+    margin-right: 8px;
+    font-size: large;
+  }
+
+  select {
+    padding-right: 69px;
+    padding-left: 69px;
+  }
+
+  .size {
+    margin-top: 16px;
+  }
+
+  .save-button {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  button {
+    background-color: #3c4550;
+    padding-left: 64px;
+    padding-right: 64px;
+    border-radius: 5px;
+    color: white;
+  }
